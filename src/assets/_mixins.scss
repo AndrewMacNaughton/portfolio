@@ -1,0 +1,29 @@
+$breakpoints: (
+    small: 480px,
+    medium: 768px,
+    large: 960px,
+);
+@mixin breakpoint($name) {
+    @each $label, $size in $breakpoints {
+        @if $name == $label {
+            @media (min-width: $size) {
+                @content;
+            }
+        }
+    }
+}
+.input-class {
+    height: 40px;
+    font-size: 16px;
+    line-height: 24px;
+    border: solid 1px #ccc;
+    border-radius: 4px;
+    color: #5f5f5f !important;
+    padding-left: 12px;
+    &:focus-visible {
+        outline: none;
+    }
+    &.skinny {
+        width: 40px;
+    }
+}

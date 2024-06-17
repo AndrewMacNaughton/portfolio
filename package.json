@@ -1,0 +1,22 @@
+{
+    "name": "portfolio",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview"
+    },
+    "dependencies": {
+        "@zaui/vue3-multiselect": "github:AndrewMacNaughton/multi-select-input",
+        "moment": "^2.30.1",
+        "vue": "^3.4.21",
+        "vue-router": "^4.3.2"
+    },
+    "devDependencies": {
+        "@vitejs/plugin-vue": "^5.0.4",
+        "sass": "^1.75.0",
+        "vite": "^5.2.0"
+    }
+}
