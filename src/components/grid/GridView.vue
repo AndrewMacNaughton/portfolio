@@ -243,6 +243,10 @@ export default {
                 return this.sortedItems;
             }
         },
+        test(){
+            this.sortColumn = ''
+            
+        }
     },
     methods: {
         formatDate(date) {
